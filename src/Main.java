@@ -56,21 +56,21 @@ public class Main {
                         db.updateLocation(updateId, updateLat, updateLon, updateElement);
                         break;
                     case 4:
-                        // Видалити рядок
+                        
                         System.out.print("Enter ID of the row to delete: ");
                         int deleteId = scanner.nextInt();
                         db.deleteRow(deleteId);
                         break;
                     case 5:
-                        // Очистити таблицю
+                        
                         db.clearTable();
                         break;
                     case 6:
-                        // Переглянути локації за координатами
+                        
                         db.getLocation();
                         break;
                     case 7:
-                        // Вихід
+                        
                         continueLoop = false;
                         System.out.println("Exiting the program...");
                         break;
@@ -82,7 +82,7 @@ public class Main {
         } catch (SQLException e) {
             System.out.println("Database connection error: " + e.getMessage());
         } finally {
-            scanner.close(); // Закриваємо сканер
+            scanner.close(); 
         }
     }
 }
